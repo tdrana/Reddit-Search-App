@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    .<div class="container">
+        <div class="row mt-5">
+             <div class="col-lg-10 mx-auto">
+                  <div class="title">
+                        <h4 class="text-primary mb-3">Js Axios Demo <small class="text-dark">By Tanmoy Dhar</small></h4>
+                       <div class="jumbotron" style= "padding: 2rem 2rem">
+                           <h2>Welcome To Axios</h2>
+                           <p class="text-primary">This application use Axios. Axios is a promise-based HTTP client that works both in the browser and in a Node.js environment. </p>
+
+                       </div>
+                  </div>
+                  <div class="card mb-3">
+                        <div class="card-header text-white bg-primary">
+                          GET Request
+                        </div>
+                        <div class="card-body">
+                            <button class="btn btn-primary" onclick="performGetRequest1()">Get Todos</button>
+                            <button class="btn btn-danger" onclick="clearOutput()">Clear</button>
+                            <div class="card-body" id="getResult1">
+
+                            </div>
+                        </div>
+                  </div>
+                  <div class="card mb-3">
+                        <div class="card-header text-white bg-primary">
+                          GET Request with parameters
+                        </div>
+                        <div class="card-body">
+                                <div class="form-group">
+                                
+                                  <input type="text"
+                                    class="form-control" id="toDoId"  placeholder="Todo ID">
+                                </div>
+                                <button class="btn btn-primary" onclick="performGetRequest2()">Get Todos</button>
+                                <button class="btn btn-danger" onclick="clearOutput()">Clear</button>
+                                <div class="card-body" id="getResult2">
+    
+                                </div>
+                        </div>
+                  </div>
+                  <div class="card mb-3">
+                        <div class="card-header text-white bg-primary">
+                          POST Request
+                        </div>
+                        <div class="card-body" id="create-todo">
+                            <form  id="todoInputForm">
+                                <div class="form-group">
+                                  <input type="text"
+                                    class="form-control" name="" id="todoTitle"  placeholder="Todo Title ...">
+                                </div>
+                                <button type="submit" class="btn btn-success">Send</button>
+                            </form><br>
+                            <button class="btn btn-danger" onclick="clearOutput()">Clear</button>
+                            <div class="card-body" id="postResult">
+    
+                                </div>
+                        </div>
+                  </div>
+             </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
